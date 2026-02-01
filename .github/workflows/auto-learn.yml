@@ -18,6 +18,10 @@ on:
           - status
           - learn
 
+# Grant write permissions to the workflow
+permissions:
+  contents: write
+
 # Ensure only one run at a time
 concurrency:
   group: trading-bot
@@ -31,7 +35,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
           fetch-depth: 0
       
       - name: Set up Python
