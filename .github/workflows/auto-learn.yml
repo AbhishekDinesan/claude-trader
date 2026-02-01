@@ -52,13 +52,76 @@ jobs:
       - name: Run daily trading cycle
         run: python scheduler.py daily
       
+      - name: Generate email content
+        id: email
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          
+          # Read portfolio status
+          if [ -f results/status.json ]; then
+            VALUE=$(cat results/status.json | python -c "import sys, json; print(f\"{json.load(sys.stdin).get('portfolio_value', 1000):,.2f}\")")
+            RETURN=$(cat results/status.json | python -c "import sys, json; print(f\"{json.load(sys.stdin).get('total_return_pct', 0):+.2f}\")")
+            POSITIONS=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('positions', 0))")
+          else
+            VALUE="1,000.00"
+            RETURN="+0.00"
+            POSITIONS="0"
+          fi
+          
+          # Read today's journal for details
+          JOURNAL_FILE="logs/journal_${DATE}.md"
+          if [ -f "$JOURNAL_FILE" ]; then
+            JOURNAL_CONTENT=$(cat "$JOURNAL_FILE")
+          else
+            JOURNAL_CONTENT="No journal generated today."
+          fi
+          
+          # Create email body
+          echo "SUBJECT=Trading Bot Update: \$${VALUE} (${RETURN}%) - ${DATE}" >> $GITHUB_OUTPUT
+          echo "VALUE=${VALUE}" >> $GITHUB_OUTPUT
+          echo "RETURN=${RETURN}" >> $GITHUB_OUTPUT
+          echo "POSITIONS=${POSITIONS}" >> $GITHUB_OUTPUT
+          echo "DATE=${DATE}" >> $GITHUB_OUTPUT
+      
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "🤖 Trading Bot: ${{ steps.email.outputs.VALUE }} (${{ steps.email.outputs.RETURN }}%) - ${{ steps.email.outputs.DATE }}"
+          to: abhidines04@gmail.com
+          from: Trading Bot <${{ secrets.EMAIL_USERNAME }}>
+          body: |
+            Daily Trading Bot Report - ${{ steps.email.outputs.DATE }}
+            ═══════════════════════════════════════════════════════════
+            
+            PORTFOLIO SUMMARY
+            ─────────────────
+            💰 Total Value: $${{ steps.email.outputs.VALUE }}
+            📈 Total Return: ${{ steps.email.outputs.RETURN }}%
+            📊 Open Positions: ${{ steps.email.outputs.POSITIONS }}
+            
+            ─────────────────
+            
+            Full details in the daily journal:
+            https://github.com/${{ github.repository }}/blob/main/logs/journal_${{ steps.email.outputs.DATE }}.md
+            
+            View all actions:
+            https://github.com/${{ github.repository }}/actions
+            
+            ─────────────────
+            This is an automated paper trading simulation.
+            Not real money. For educational purposes only.
+        continue-on-error: true
+      
       - name: Commit all changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Trading Bot"
           git add -A
           
-          # Create commit message with summary
           DATE=$(date +'%Y-%m-%d')
           
           if [ -f results/status.json ]; then
