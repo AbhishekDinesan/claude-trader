@@ -46,23 +46,7 @@ jobs:
           pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
       
       - name: Run daily trading cycle
-        run: |
-          cd trader
-          python scheduler.py daily
-      
-      - name: Update README with latest status
-        run: |
-          cd trader
-          
-          # Read current status
-          if [ -f results/status.json ]; then
-            VALUE=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('portfolio_value', 1000))")
-            RETURN=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('total_return_pct', 0))")
-            WINRATE=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('win_rate', 0))")
-            
-            echo "Portfolio: \$${VALUE} (${RETURN}% return)"
-            echo "Win Rate: ${WINRATE}%"
-          fi
+        run: python scheduler.py daily
       
       - name: Commit all changes
         run: |
@@ -73,9 +57,9 @@ jobs:
           # Create commit message with summary
           DATE=$(date +'%Y-%m-%d')
           
-          if [ -f trader/results/status.json ]; then
-            VALUE=$(cat trader/results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('portfolio_value', 1000))")
-            RETURN=$(cat trader/results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('total_return_pct', 0))")
+          if [ -f results/status.json ]; then
+            VALUE=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('portfolio_value', 1000))")
+            RETURN=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('total_return_pct', 0))")
             COMMIT_MSG="Daily update ${DATE}: \$${VALUE} (${RETURN}%)"
           else
             COMMIT_MSG="Daily update ${DATE}"
@@ -83,53 +67,3 @@ jobs:
           
           git diff --staged --quiet || git commit -m "$COMMIT_MSG"
           git push
-
-  # Generate weekly summary
-  weekly-summary:
-    runs-on: ubuntu-latest
-    if: github.event.schedule == '30 14 * * 1'  # Mondays only
-    needs: daily-trading
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install dependencies
-        run: pip install yfinance pandas numpy
-      
-      - name: Generate weekly summary
-        run: |
-          cd trader
-          python -c "
-          import json
-          from pathlib import Path
-          from datetime import datetime, timedelta
-          
-          logs_dir = Path('logs')
-          
-          # Get last 7 days of journals
-          entries = []
-          for i in range(7):
-              date = (datetime.now() - timedelta(days=i)).strftime('%Y-%m-%d')
-              jf = logs_dir / f'journal_{date}.json'
-              if jf.exists():
-                  with open(jf) as f:
-                      entries.append(json.load(f))
-          
-          if entries:
-              start_val = entries[-1]['portfolio']['total_value'] if entries else 1000
-              end_val = entries[0]['portfolio']['total_value'] if entries else 1000
-              weekly_return = (end_val / start_val - 1) * 100
-              
-              print(f'Weekly Summary')
-              print(f'Start: \${start_val:,.2f}')
-              print(f'End: \${end_val:,.2f}')
-              print(f'Return: {weekly_return:+.2f}%')
-          "
