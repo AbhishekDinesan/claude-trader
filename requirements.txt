@@ -1,0 +1,48 @@
+# Stock Market Analysis Tool - Dependencies
+# All free, no paid APIs required
+
+# Data & Analysis
+yfinance>=0.2.36
+pandas>=2.0.0
+numpy>=1.24.0
+ta>=0.10.2  # Technical Analysis library
+
+# Reddit Sentiment
+praw>=7.7.0
+prawcore>=2.3.0
+
+# News & Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+feedparser>=6.0.10
+
+# NLP for Sentiment
+textblob>=0.17.1
+vaderSentiment>=3.3.2
+
+# Display & CLI
+rich>=13.7.0
+tabulate>=0.9.0
+
+# Async support
+aiohttp>=3.9.0
+
+# Date handling
+python-dateutil>=2.8.2
+
+# ============================================
+# Machine Learning Dependencies
+# ============================================
+
+# Core ML Libraries
+scikit-learn>=1.3.0
+
+# Gradient Boosting Models (primary ML engines)
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Optional: Deep Learning (for advanced neural network models)
+# torch>=2.0.0  # Uncomment if you want neural network support
+
+# Model persistence
+joblib>=1.3.0

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-01-31T22:43:21.310425",
+  "total_scanned": 5,
+  "predictions_logged": 5,
+  "top_picks": [
+    {
+      "symbol": "NVDA",
+      "signal": "BUY",
+      "score": 64.1,
+      "price": 191.13,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "technical_score": 81.2,
+      "momentum_score": 50.0,
+      "risk_level": "HIGH"
+    }
+  ],
+  "summary": {
+    "strong_buy": 0,
+    "buy": 1,
+    "hold": 4,
+    "sell": 0
+  }
+}

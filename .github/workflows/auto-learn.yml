@@ -1,0 +1,126 @@
+name: Auto Stock Scanner & Learner
+
+on:
+  # Run daily at 9:30 AM ET (market open) - 14:30 UTC
+  schedule:
+    - cron: '30 14 * * 1-5'  # Weekdays only
+  
+  # Run weekly learning on Sundays at 6 PM ET - 23:00 UTC
+  schedule:
+    - cron: '0 23 * * 0'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to run'
+        required: true
+        default: 'scan'
+        type: choice
+        options:
+          - scan
+          - learn
+          - full
+
+jobs:
+  daily-scan:
+    if: github.event.schedule == '30 14 * * 1-5' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'scan')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
+      
+      - name: Run daily scan
+        run: |
+          cd trader
+          python scheduler.py scan --symbols 40
+      
+      - name: Commit results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Daily scan $(date +'%Y-%m-%d')"
+          git push
+
+  weekly-learn:
+    if: github.event.schedule == '0 23 * * 0' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'learn')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
+      
+      - name: Run learning cycle
+        run: |
+          cd trader
+          python scheduler.py learn
+      
+      - name: Commit learned weights
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Weekly learning $(date +'%Y-%m-%d')"
+          git push
+
+  full-cycle:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'full'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
+      
+      - name: Run full cycle
+        run: |
+          cd trader
+          python scheduler.py full
+      
+      - name: Commit all results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Full cycle $(date +'%Y-%m-%d')"
+          git push
