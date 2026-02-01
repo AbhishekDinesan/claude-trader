@@ -1,8 +1,17 @@
 # Stock Analysis Tool
 
-A self-learning stock analysis tool that uses technical analysis, momentum screening, and sentiment analysis to find high-potential opportunities. **It learns from its mistakes automatically!**
+NOTE: I did not write a SINGLE line of code in this repo. The code is not a reflection of my technical ability. It's an experiment to see how a fully claude opus developed application performs in the complex nature of the stock market by
+simulating a $1000 portfolio.
 
-## Features
+It uses both traditional financial indicators as well as sentiment analysis
+from popular news sources.
+
+Super easy to set-up if curious, no cost, credentials or API's required (unless you want gmail notifications daily when markets open - you'll need github secrets).
+
+Results are tracked in a log file. Super excited to see my (hypothetical) return in a year.
+
+
+## Indicators
 
 ### Technical Analysis
 - **RSI** - Identify oversold/overbought conditions
