@@ -1,13 +1,9 @@
-name: Auto Stock Scanner & Learner
+name: Daily Trading Bot
 
 on:
-  # Run daily at 9:30 AM ET (market open) - 14:30 UTC
+  # Run daily at 9:30 AM ET (market open) - 14:30 UTC on weekdays
   schedule:
-    - cron: '30 14 * * 1-5'  # Weekdays only
-  
-  # Run weekly learning on Sundays at 6 PM ET - 23:00 UTC
-  schedule:
-    - cron: '0 23 * * 0'
+    - cron: '30 14 * * 1-5'
   
   # Allow manual trigger
   workflow_dispatch:
@@ -15,16 +11,20 @@ on:
       action:
         description: 'Action to run'
         required: true
-        default: 'scan'
+        default: 'daily'
         type: choice
         options:
-          - scan
+          - daily
+          - status
           - learn
-          - full
+
+# Ensure only one run at a time
+concurrency:
+  group: trading-bot
+  cancel-in-progress: false
 
 jobs:
-  daily-scan:
-    if: github.event.schedule == '30 14 * * 1-5' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'scan')
+  daily-trading:
     runs-on: ubuntu-latest
     
     steps:
@@ -32,6 +32,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -44,22 +45,50 @@ jobs:
           pip install --upgrade pip
           pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
       
-      - name: Run daily scan
+      - name: Run daily trading cycle
         run: |
           cd trader
-          python scheduler.py scan --symbols 40
+          python scheduler.py daily
       
-      - name: Commit results
+      - name: Update README with latest status
+        run: |
+          cd trader
+          
+          # Read current status
+          if [ -f results/status.json ]; then
+            VALUE=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('portfolio_value', 1000))")
+            RETURN=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('total_return_pct', 0))")
+            WINRATE=$(cat results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('win_rate', 0))")
+            
+            echo "Portfolio: \$${VALUE} (${RETURN}% return)"
+            echo "Win Rate: ${WINRATE}%"
+          fi
+      
+      - name: Commit all changes
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "Trading Bot"
           git add -A
-          git diff --staged --quiet || git commit -m "Daily scan $(date +'%Y-%m-%d')"
+          
+          # Create commit message with summary
+          DATE=$(date +'%Y-%m-%d')
+          
+          if [ -f trader/results/status.json ]; then
+            VALUE=$(cat trader/results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('portfolio_value', 1000))")
+            RETURN=$(cat trader/results/status.json | python -c "import sys, json; print(json.load(sys.stdin).get('total_return_pct', 0))")
+            COMMIT_MSG="Daily update ${DATE}: \$${VALUE} (${RETURN}%)"
+          else
+            COMMIT_MSG="Daily update ${DATE}"
+          fi
+          
+          git diff --staged --quiet || git commit -m "$COMMIT_MSG"
           git push
 
-  weekly-learn:
-    if: github.event.schedule == '0 23 * * 0' || (github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'learn')
+  # Generate weekly summary
+  weekly-summary:
     runs-on: ubuntu-latest
+    if: github.event.schedule == '30 14 * * 1'  # Mondays only
+    needs: daily-trading
     
     steps:
       - name: Checkout repository
@@ -71,56 +100,36 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
       
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
+        run: pip install yfinance pandas numpy
       
-      - name: Run learning cycle
+      - name: Generate weekly summary
         run: |
           cd trader
-          python scheduler.py learn
-      
-      - name: Commit learned weights
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff --staged --quiet || git commit -m "Weekly learning $(date +'%Y-%m-%d')"
-          git push
-
-  full-cycle:
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'full'
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-      
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install yfinance pandas numpy requests beautifulsoup4 vaderSentiment textblob rich
-      
-      - name: Run full cycle
-        run: |
-          cd trader
-          python scheduler.py full
-      
-      - name: Commit all results
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff --staged --quiet || git commit -m "Full cycle $(date +'%Y-%m-%d')"
-          git push
+          python -c "
+          import json
+          from pathlib import Path
+          from datetime import datetime, timedelta
+          
+          logs_dir = Path('logs')
+          
+          # Get last 7 days of journals
+          entries = []
+          for i in range(7):
+              date = (datetime.now() - timedelta(days=i)).strftime('%Y-%m-%d')
+              jf = logs_dir / f'journal_{date}.json'
+              if jf.exists():
+                  with open(jf) as f:
+                      entries.append(json.load(f))
+          
+          if entries:
+              start_val = entries[-1]['portfolio']['total_value'] if entries else 1000
+              end_val = entries[0]['portfolio']['total_value'] if entries else 1000
+              weekly_return = (end_val / start_val - 1) * 100
+              
+              print(f'Weekly Summary')
+              print(f'Start: \${start_val:,.2f}')
+              print(f'End: \${end_val:,.2f}')
+              print(f'Return: {weekly_return:+.2f}%')
+          "

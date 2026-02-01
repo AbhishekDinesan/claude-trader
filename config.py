@@ -40,7 +40,7 @@ class ScreenerConfig:
     """Stock screener parameters"""
     # Minimum criteria
     min_price: float = 1.0      # Avoid penny stocks under $1
-    max_price: float = 100.0    # Focus on affordable stocks for $1000 account
+    max_price: float = 100.0    # Focus on mid-range stocks
     min_volume: int = 500000    # Minimum daily volume for liquidity
     min_market_cap: float = 100_000_000  # $100M minimum market cap
     

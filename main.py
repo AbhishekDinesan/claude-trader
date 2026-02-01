@@ -64,7 +64,7 @@ def print_banner():
     |   STOCK ANALYSIS TOOL v1.0                                    |
     |   Technical Analysis - Momentum Screening - Sentiment         |
     |                                                               |
-    |   Goal: Find high-upside opportunities for your $1000         |
+    |   Find high-potential stock opportunities                      |
     |   Strategy: Technical + Momentum + Social Sentiment           |
     |                                                               |
     +===============================================================+
@@ -386,10 +386,10 @@ def cmd_trending(args):
 
 
 def cmd_portfolio(args):
-    """Portfolio analysis for $1000"""
+    """Portfolio analysis and allocation suggestions"""
     print_banner()
     
-    print("\n[PORTFOLIO BUILDER FOR $1,000]")
+    print("\n[PORTFOLIO BUILDER]")
     print("="*60)
     
     scanner = UnifiedScanner()
@@ -671,7 +671,7 @@ Examples:
   python main.py top 5                   # Get top 5 picks
   python main.py momentum                # Find momentum leaders
   python main.py breakouts               # Find breakout candidates
-  python main.py portfolio               # Build $1000 portfolio
+  python main.py portfolio               # Build a diversified portfolio
 
 Learning Commands (self-improvement):
   python main.py learn cycle             # Evaluate past predictions & learn
@@ -749,7 +749,7 @@ ML Commands:
         # Default to portfolio command for the user's goal
         print_banner()
         print("\n[Quick Start]")
-        print("    python main.py portfolio    - Build a $1000 portfolio")
+        print("    python main.py portfolio    - Build a diversified portfolio")
         print("    python main.py scan --fast  - Quick market scan")
         print("    python main.py analyze TSLA - Analyze any stock")
         print("\nRun 'python main.py --help' for all options.")

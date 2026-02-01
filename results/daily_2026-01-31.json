@@ -1,0 +1,144 @@
+{
+  "date": "2026-01-31",
+  "timestamp": "2026-01-31T22:56:26.238825",
+  "portfolio": {
+    "date": "2026-01-31",
+    "total_value": 1000.0,
+    "cash": 400.0,
+    "positions_value": 600.0,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": 0.0,
+    "total_return_pct": 0.0,
+    "vs_spy": 0.0,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 23.8799991607666,
+        "current_value": 200.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "NVDA",
+        "shares": 1.0464081771076497,
+        "entry_price": 191.1300048828125,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 64.1) - Strong uptrend (strength: 81)",
+        "current_price": 191.1300048828125,
+        "current_value": 200.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 102.33999633789062,
+        "current_value": 200.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "GME",
+      "signal": "BUY",
+      "score": 67.8,
+      "technical_score": 70.0,
+      "momentum_score": 75.0,
+      "price": 23.88,
+      "target_upside": 10,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "High volume (1.8x avg)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "NVDA",
+      "signal": "BUY",
+      "score": 64.1,
+      "technical_score": 81.2,
+      "momentum_score": 50.0,
+      "price": 191.13,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 81)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "EXAS",
+      "signal": "BUY",
+      "score": 60.8,
+      "technical_score": 70.0,
+      "momentum_score": 55.0,
+      "price": 102.34,
+      "target_upside": 13.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Bollinger squeeze - breakout imminent"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SAVA",
+      "signal": "BUY",
+      "score": 60.0,
+      "technical_score": 80.0,
+      "momentum_score": 40.0,
+      "price": 1.99,
+      "target_upside": 9.1,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Bollinger squeeze - breakout imminent"
+      ],
+      "bearish_factors": [
+        "Downtrend (strength: 0)"
+      ]
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "BUY",
+      "symbol": "GME",
+      "shares": 8.375209674571009,
+      "price": 23.8799991607666,
+      "reason": "BUY (Score: 67.8) - Golden cross (MA bullish)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "NVDA",
+      "shares": 1.0464081771076497,
+      "price": 191.1300048828125,
+      "reason": "BUY (Score: 64.1) - Strong uptrend (strength: 81)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "EXAS",
+      "shares": 1.9542701500561954,
+      "price": 102.33999633789062,
+      "reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 0,
+    "total_predictions": 49,
+    "win_rate": 0
+  }
+}

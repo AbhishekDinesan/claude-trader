@@ -1,259 +1,206 @@
 #!/usr/bin/env python3
 """
 Automated Scheduler for Stock Analysis Tool
-Runs scans and learning cycles automatically
+Runs the complete daily trading cycle automatically
 
-Can be triggered by:
-- GitHub Actions (scheduled)
-- Cron job
-- Task scheduler
-- Manual run
+Features:
+- Daily stock scan with predictions
+- Automatic paper trading execution
+- Learning from past predictions
+- New stock discovery
+- Comprehensive daily journal
 """
 
 import os
 import sys
 import json
 import argparse
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import DEFAULT_WATCHLIST
-from scanner import UnifiedScanner
-from learning import AutonomousLearner, PredictionTracker, show_learning_stats
+from daily_journal import DailyJournal, run_daily_journal
+from paper_trading import PaperTradingPortfolio, get_portfolio_status
+from learning import AutonomousLearner, show_learning_stats
+from stock_discovery import run_discovery
 
 
 # Results storage path
 RESULTS_DIR = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 
-
-def run_daily_scan(symbols: list = None, track: bool = True):
-    """
-    Run daily stock scan and optionally track predictions
-    
-    Args:
-        symbols: List of symbols to scan (uses default watchlist if None)
-        track: Whether to log predictions for learning
-    """
-    print("\n" + "="*60)
-    print(f"[AUTOMATED DAILY SCAN]")
-    print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*60)
-    
-    if symbols is None:
-        # Use a subset for faster automated runs
-        symbols = DEFAULT_WATCHLIST[:30]
-    
-    scanner = UnifiedScanner()
-    
-    print(f"\nScanning {len(symbols)} stocks...")
-    
-    opportunities = scanner.scan_watchlist(
-        symbols=symbols,
-        include_sentiment=False  # Skip sentiment for speed
-    )
-    
-    if not opportunities:
-        print("No opportunities found.")
-        return None
-    
-    # Log predictions for learning
-    logged_count = 0
-    if track:
-        print("\nLogging predictions for learning...")
-        learner = AutonomousLearner()
-        for opp in opportunities:
-            if learner.log_prediction_from_opportunity(opp):
-                logged_count += 1
-        print(f"Logged {logged_count} predictions")
-    
-    # Get top picks
-    buy_signals = [o for o in opportunities if o.signal in ['STRONG BUY', 'BUY']]
-    
-    # Save results to file
-    results = {
-        'timestamp': datetime.now().isoformat(),
-        'total_scanned': len(opportunities),
-        'predictions_logged': logged_count,
-        'top_picks': [
-            {
-                'symbol': o.symbol,
-                'signal': o.signal,
-                'score': round(o.overall_score, 1),
-                'price': round(o.current_price, 2),
-                'target_upside': round(o.target_upside, 1),
-                'stop_loss': round(o.stop_loss, 1),
-                'technical_score': round(o.technical_score, 1),
-                'momentum_score': round(o.momentum_score, 1),
-                'risk_level': o.risk_level
-            }
-            for o in buy_signals[:10]
-        ],
-        'summary': {
-            'strong_buy': len([o for o in opportunities if o.signal == 'STRONG BUY']),
-            'buy': len([o for o in opportunities if o.signal == 'BUY']),
-            'hold': len([o for o in opportunities if o.signal == 'HOLD']),
-            'sell': len([o for o in opportunities if 'SELL' in o.signal])
-        }
-    }
-    
-    # Save daily results
-    date_str = datetime.now().strftime('%Y-%m-%d')
-    results_file = RESULTS_DIR / f"scan_{date_str}.json"
-    with open(results_file, 'w') as f:
-        json.dump(results, f, indent=2)
-    print(f"\nResults saved to {results_file}")
-    
-    # Print summary
-    print("\n" + "="*60)
-    print("[SCAN SUMMARY]")
-    print("="*60)
-    print(f"Strong Buy: {results['summary']['strong_buy']}")
-    print(f"Buy: {results['summary']['buy']}")
-    print(f"Hold: {results['summary']['hold']}")
-    print(f"Sell: {results['summary']['sell']}")
-    
-    if buy_signals:
-        print("\n[TOP PICKS]")
-        for i, pick in enumerate(results['top_picks'][:5], 1):
-            print(f"  {i}. {pick['symbol']}: {pick['signal']} "
-                  f"(Score: {pick['score']}, Price: ${pick['price']})")
-    
-    return results
+LOGS_DIR = Path(__file__).parent / "logs"
+LOGS_DIR.mkdir(exist_ok=True)
 
 
-def run_weekly_learning():
+def run_daily_cycle():
     """
-    Run weekly learning cycle to evaluate predictions and adjust weights
-    """
-    print("\n" + "="*60)
-    print(f"[AUTOMATED WEEKLY LEARNING]")
-    print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*60)
-    
-    learner = AutonomousLearner()
-    
-    # Run learning cycle
-    results = learner.run_learning_cycle(min_eval_days=5)
-    
-    # Save learning results
-    date_str = datetime.now().strftime('%Y-%m-%d')
-    learning_file = RESULTS_DIR / f"learning_{date_str}.json"
-    
-    learning_data = {
-        'timestamp': datetime.now().isoformat(),
-        'evaluated_this_cycle': results['evaluated_this_cycle'],
-        'total_predictions': results['stats']['total_predictions'],
-        'total_evaluated': results['stats']['evaluated'],
-        'win_rate': results['stats']['win_rate']
-    }
-    
-    if 'metrics' in results:
-        learning_data['metrics'] = results['metrics']
-    
-    with open(learning_file, 'w') as f:
-        json.dump(learning_data, f, indent=2)
-    
-    print(f"\nLearning results saved to {learning_file}")
-    
-    return results
-
-
-def run_full_cycle():
-    """
-    Run both scan and learning (for weekly comprehensive run)
+    Run the complete daily trading cycle:
+    1. Discover new stocks
+    2. Scan stocks and log predictions
+    3. Execute paper trades
+    4. Run learning cycle
+    5. Generate daily journal
     """
     print("\n" + "#"*60)
-    print(f"# FULL AUTOMATED CYCLE")
+    print(f"# AUTOMATED DAILY TRADING CYCLE")
     print(f"# {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("#"*60)
     
-    # Run scan
-    scan_results = run_daily_scan(track=True)
+    # Run the full journal cycle (does everything)
+    journal = DailyJournal()
+    journal_file = journal.run_full_daily_cycle()
     
-    # Run learning
-    learning_results = run_weekly_learning()
-    
-    # Generate summary report
-    report = {
-        'timestamp': datetime.now().isoformat(),
-        'scan': scan_results,
-        'learning': {
-            'evaluated': learning_results['evaluated_this_cycle'],
-            'total_tracked': learning_results['stats']['total_predictions'],
-            'win_rate': learning_results['stats']['win_rate']
-        }
+    # Also save a summary to results folder
+    summary = {
+        'date': journal.date,
+        'timestamp': journal.timestamp,
+        'portfolio': journal.capture_portfolio_snapshot(),
+        'recommendations': [
+            s for s in journal.scan_results 
+            if s['signal'] in ['STRONG BUY', 'BUY']
+        ][:5],
+        'trades_today': journal.trades_made,
+        'new_discoveries': len(journal.discoveries),
+        'learning': journal.learning_insights
     }
     
-    # Save combined report
-    date_str = datetime.now().strftime('%Y-%m-%d')
-    report_file = RESULTS_DIR / f"report_{date_str}.json"
-    with open(report_file, 'w') as f:
-        json.dump(report, f, indent=2)
+    summary_file = RESULTS_DIR / f"daily_{journal.date}.json"
+    with open(summary_file, 'w') as f:
+        json.dump(summary, f, indent=2)
     
-    print("\n" + "#"*60)
-    print("# CYCLE COMPLETE")
-    print("#"*60)
+    print(f"\nSummary saved to {summary_file}")
     
-    return report
+    return summary
 
 
-def generate_readme_badge():
-    """Generate a badge/status for README showing latest stats"""
-    tracker = PredictionTracker()
-    stats = tracker.get_stats()
+def show_portfolio_status():
+    """Display current portfolio status"""
+    status = get_portfolio_status()
     
-    badge_data = {
-        'predictions': stats['total_predictions'],
-        'win_rate': f"{stats['win_rate']*100:.1f}%",
+    print("\n" + "="*60)
+    print("[PORTFOLIO STATUS]")
+    print("="*60)
+    print(f"Started: {status['start_date']} with ${status['starting_capital']:,.2f}")
+    print(f"\nCurrent Value: ${status['total_value']:,.2f}")
+    print(f"  Cash: ${status['cash']:,.2f}")
+    print(f"  Positions: ${status['positions_value']:,.2f}")
+    print(f"\nTotal Return: ${status['total_return']:+,.2f} ({status['total_return_pct']:+.2f}%)")
+    
+    if status['positions']:
+        print(f"\n[POSITIONS ({status['num_positions']})]")
+        print("-"*60)
+        for pos in status['positions']:
+            print(f"  {pos['symbol']}: {pos['shares']:.2f} shares @ ${pos['entry_price']:.2f}")
+            print(f"    Current: ${pos['current_price']:.2f} | P&L: ${pos['pnl']:+.2f} ({pos['pnl_percent']:+.1f}%)")
+    else:
+        print("\nNo open positions")
+
+
+def show_recent_journals():
+    """Show recent journal entries"""
+    print("\n[RECENT JOURNALS]")
+    print("="*60)
+    
+    journal_files = sorted(LOGS_DIR.glob("journal_*.md"), reverse=True)[:7]
+    
+    if not journal_files:
+        print("No journals yet. Run 'python scheduler.py daily' to generate.")
+        return
+    
+    for jf in journal_files:
+        date = jf.stem.replace("journal_", "")
+        
+        # Load corresponding JSON for stats
+        json_file = LOGS_DIR / f"journal_{date}.json"
+        if json_file.exists():
+            with open(json_file) as f:
+                data = json.load(f)
+            
+            portfolio = data.get('portfolio', {})
+            value = portfolio.get('total_value', 1000)
+            ret = portfolio.get('total_return_pct', 0)
+            trades = len(data.get('trades', []))
+            
+            print(f"  {date}: ${value:,.2f} ({ret:+.2f}%) | {trades} trades")
+        else:
+            print(f"  {date}: (no data)")
+
+
+def generate_status_badge():
+    """Generate a status badge for README"""
+    status = get_portfolio_status()
+    
+    badge = {
+        'portfolio_value': round(status['total_value'], 2),
+        'total_return_pct': round(status['total_return_pct'], 2),
+        'positions': status['num_positions'],
         'last_updated': datetime.now().isoformat()
     }
     
+    # Get learning stats
+    try:
+        from learning import PredictionTracker
+        tracker = PredictionTracker()
+        learn_stats = tracker.get_stats()
+        badge['predictions_tracked'] = learn_stats['total_predictions']
+        badge['win_rate'] = round(learn_stats['win_rate'] * 100, 1)
+    except:
+        pass
+    
     badge_file = RESULTS_DIR / "status.json"
     with open(badge_file, 'w') as f:
-        json.dump(badge_data, f, indent=2)
+        json.dump(badge, f, indent=2)
     
-    return badge_data
+    return badge
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Automated Stock Analysis Scheduler"
+        description="Automated Stock Trading Scheduler",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python scheduler.py daily      # Run full daily cycle (scan, trade, learn, journal)
+  python scheduler.py status     # Show portfolio status
+  python scheduler.py journals   # Show recent journal entries
+  python scheduler.py learn      # Run learning cycle only
+  python scheduler.py discover   # Run stock discovery only
+        """
     )
     parser.add_argument(
         'action',
-        choices=['scan', 'learn', 'full', 'status'],
-        help='Action to perform: scan (daily), learn (weekly), full (both), status (show stats)'
-    )
-    parser.add_argument(
-        '--symbols',
-        type=int,
-        default=30,
-        help='Number of symbols to scan (default: 30)'
+        choices=['daily', 'status', 'journals', 'learn', 'discover'],
+        help='Action to perform'
     )
     
     args = parser.parse_args()
     
-    if args.action == 'scan':
-        symbols = DEFAULT_WATCHLIST[:args.symbols]
-        run_daily_scan(symbols=symbols, track=True)
-        generate_readme_badge()
-        
-    elif args.action == 'learn':
-        run_weekly_learning()
-        generate_readme_badge()
-        
-    elif args.action == 'full':
-        run_full_cycle()
-        generate_readme_badge()
+    if args.action == 'daily':
+        run_daily_cycle()
+        generate_status_badge()
         
     elif args.action == 'status':
-        show_learning_stats()
-        badge = generate_readme_badge()
-        print(f"\nStatus badge updated: {badge}")
+        show_portfolio_status()
+        
+    elif args.action == 'journals':
+        show_recent_journals()
+        
+    elif args.action == 'learn':
+        learner = AutonomousLearner()
+        learner.run_learning_cycle(min_eval_days=5)
+        generate_status_badge()
+        
+    elif args.action == 'discover':
+        results = run_discovery()
+        print(f"\nDiscovered {len(results['new_discoveries'])} new stocks")
+        if results['top_recommendations']:
+            print("\nTop recommendations from discoveries:")
+            for stock in results['top_recommendations'][:5]:
+                print(f"  {stock['symbol']}: +{stock.get('change_since_discovery', 0):.1f}% since discovery")
 
 
 if __name__ == "__main__":

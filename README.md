@@ -2,10 +2,6 @@
 
 A self-learning stock analysis tool that uses technical analysis, momentum screening, and sentiment analysis to find high-potential opportunities. **It learns from its mistakes automatically!**
 
-## Goal
-
-Turn $1,000 into $5,000 using data-driven analysis that improves over time.
-
 ## Features
 
 ### Technical Analysis
@@ -46,7 +42,7 @@ python main.py scan --fast --track
 # Analyze one stock
 python main.py analyze NVDA
 
-# Build $1000 portfolio
+# Build a portfolio
 python main.py portfolio
 ```
 
@@ -123,7 +119,7 @@ You can also trigger runs manually:
 | `scan --fast` | Quick market scan |
 | `scan --fast --track` | Scan + log for learning |
 | `analyze SYMBOL` | Deep dive on one stock |
-| `portfolio` | Build $1000 portfolio |
+| `portfolio` | Build a diversified portfolio |
 | `momentum` | Find momentum leaders |
 | `breakouts` | Find breakout candidates |
 | `learn cycle` | Run learning evaluation |
