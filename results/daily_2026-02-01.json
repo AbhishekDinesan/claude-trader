@@ -1,6 +1,6 @@
 {
   "date": "2026-02-01",
-  "timestamp": "2026-02-01T04:09:17.657216",
+  "timestamp": "2026-02-01T04:17:47.869245",
   "portfolio": {
     "date": "2026-02-01",
     "total_value": 1000.0,
@@ -123,19 +123,11 @@
       ]
     }
   ],
-  "trades_today": [
-    {
-      "action": "BUY",
-      "symbol": "SAVA",
-      "shares": 100.50251208117254,
-      "price": 1.9900000095367432,
-      "reason": "BUY (Score: 60.0) - Bollinger squeeze - breakout imminent"
-    }
-  ],
+  "trades_today": [],
   "new_discoveries": 0,
   "learning": {
     "predictions_evaluated": 0,
-    "total_predictions": 88,
+    "total_predictions": 127,
     "win_rate": 0
   }
 }

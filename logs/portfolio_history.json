@@ -13,8 +13,15 @@
       "return_pct": 0.0,
       "trades": 1,
       "positions": 4
+    },
+    {
+      "date": "2026-02-01",
+      "total_value": 1000.0,
+      "return_pct": 0.0,
+      "trades": 0,
+      "positions": 4
     }
   ],
   "start_date": "2026-01-31",
-  "last_updated": "2026-02-01T04:09:17.657216"
+  "last_updated": "2026-02-01T04:17:47.869245"
 }
