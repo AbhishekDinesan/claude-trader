@@ -1,0 +1,16 @@
+{
+  "weights": {
+    "technical": NaN,
+    "momentum": NaN,
+    "sentiment": NaN,
+    "tech_accuracy": NaN,
+    "sentiment_accuracy": NaN
+  },
+  "metrics": {
+    "win_rate_buy": 0.21428571428571427,
+    "win_rate_strong_buy": 0,
+    "avg_return_buy": 0.0,
+    "evaluated_predictions": 127
+  },
+  "last_updated": "2026-02-06T15:09:27.130546"
+}

@@ -1,0 +1,189 @@
+{
+  "date": "2026-02-06",
+  "timestamp": "2026-02-06T15:09:02.551682",
+  "portfolio": {
+    "date": "2026-02-06",
+    "total_value": 997.91,
+    "cash": 0.0,
+    "positions_value": 997.91,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": -2.09,
+    "total_return_pct": -0.21,
+    "vs_spy": 1.41,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 25.100000381469727,
+        "current_value": 210.21776602662126,
+        "pnl": 10.217766026621263,
+        "pnl_percent": 5.108883013310628
+      },
+      {
+        "symbol": "NVDA",
+        "shares": 1.0464081771076497,
+        "entry_price": 191.1300048828125,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 64.1) - Strong uptrend (strength: 81)",
+        "current_price": 179.97999572753906,
+        "current_value": 188.3325392450967,
+        "pnl": -11.667460754903288,
+        "pnl_percent": -5.833730377451641
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 102.625,
+        "current_value": 200.55697414951706,
+        "pnl": 0.5569741495170604,
+        "pnl_percent": 0.27848707475852663
+      },
+      {
+        "symbol": "SAVA",
+        "shares": 100.50251208117254,
+        "entry_price": 1.9900000095367432,
+        "entry_date": "2026-02-01",
+        "entry_reason": "BUY (Score: 60.0) - Bollinger squeeze - breakout imminent",
+        "current_price": 1.9600000381469727,
+        "current_value": 196.98492751296476,
+        "pnl": -3.0150724870352406,
+        "pnl_percent": -1.5075362435176154
+      },
+      {
+        "symbol": "AMC",
+        "shares": 70.4225373395827,
+        "entry_price": 1.4199999570846558,
+        "entry_date": "2026-02-02",
+        "entry_reason": "BUY (Score: 64.8) - RSI oversold - potential bounce",
+        "current_price": 1.4500000476837158,
+        "current_value": 102.11268250040318,
+        "pnl": 2.1126825004031815,
+        "pnl_percent": 2.1126825004031735
+      },
+      {
+        "symbol": "BMRN",
+        "shares": 1.7308135439012102,
+        "entry_price": 57.77629852294922,
+        "entry_date": "2026-02-02",
+        "entry_reason": "BUY (Score: 62.9) - Strong uptrend (strength: 79)",
+        "current_price": 57.60499954223633,
+        "current_value": 99.70351340412566,
+        "pnl": -0.2964865958743417,
+        "pnl_percent": -0.29648659587434567
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "SEDG",
+      "signal": "STRONG BUY",
+      "score": 82.5,
+      "technical_score": 95.0,
+      "momentum_score": 85.0,
+      "price": 35.22,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +13.8%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ENPH",
+      "signal": "BUY",
+      "score": 72.5,
+      "technical_score": 65.0,
+      "momentum_score": 95.0,
+      "price": 49.28,
+      "target_upside": 25.2,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +33.3%",
+        "Strong monthly gain +42.0%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "RUN",
+      "signal": "BUY",
+      "score": 68.4,
+      "technical_score": 83.1,
+      "momentum_score": 60.0,
+      "price": 19.32,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 91)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SMCI",
+      "signal": "BUY",
+      "score": 65.0,
+      "technical_score": 60.0,
+      "momentum_score": 80.0,
+      "price": 32.9,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong weekly momentum +13.0%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "NIO",
+      "signal": "BUY",
+      "score": 63.2,
+      "technical_score": 60.0,
+      "momentum_score": 75.0,
+      "price": 5.15,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 127,
+    "total_predictions": 322,
+    "win_rate": 0.1889763779527559,
+    "signal_performance": {
+      "strong_buy_win_rate": 0,
+      "buy_win_rate": 0.21428571428571427,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.25,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
