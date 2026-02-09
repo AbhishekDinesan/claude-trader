@@ -1,0 +1,190 @@
+{
+  "date": "2026-02-09",
+  "timestamp": "2026-02-09T15:31:18.251810",
+  "portfolio": {
+    "date": "2026-02-09",
+    "total_value": 1006.67,
+    "cash": 0.0,
+    "positions_value": 1006.67,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": 6.67,
+    "total_return_pct": 0.67,
+    "vs_spy": 1.04,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 24.25,
+        "current_value": 203.09883460834695,
+        "pnl": 3.098834608346948,
+        "pnl_percent": 1.5494173041734838
+      },
+      {
+        "symbol": "NVDA",
+        "shares": 1.0464081771076497,
+        "entry_price": 191.1300048828125,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 64.1) - Strong uptrend (strength: 81)",
+        "current_price": 191.20919799804688,
+        "current_value": 200.08286832335187,
+        "pnl": 0.08286832335187455,
+        "pnl_percent": 0.04143416167594616
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 103.30500030517578,
+        "current_value": 201.8858784479512,
+        "pnl": 1.8858784479511996,
+        "pnl_percent": 0.9429392239755918
+      },
+      {
+        "symbol": "SAVA",
+        "shares": 100.50251208117254,
+        "entry_price": 1.9900000095367432,
+        "entry_date": "2026-02-01",
+        "entry_reason": "BUY (Score: 60.0) - Bollinger squeeze - breakout imminent",
+        "current_price": 2.0399999618530273,
+        "current_value": 205.0251208117254,
+        "pnl": 5.025120811725401,
+        "pnl_percent": 2.512560405862696
+      },
+      {
+        "symbol": "AMC",
+        "shares": 70.4225373395827,
+        "entry_price": 1.4199999570846558,
+        "entry_date": "2026-02-02",
+        "entry_reason": "BUY (Score: 64.8) - RSI oversold - potential bounce",
+        "current_price": 1.3701000213623047,
+        "current_value": 96.48591991334996,
+        "pnl": -3.51408008665004,
+        "pnl_percent": -3.51408008665004
+      },
+      {
+        "symbol": "BMRN",
+        "shares": 1.7308135439012102,
+        "entry_price": 57.77629852294922,
+        "entry_date": "2026-02-02",
+        "entry_reason": "BUY (Score: 62.9) - Strong uptrend (strength: 79)",
+        "current_price": 57.83000183105469,
+        "current_value": 100.09295041302124,
+        "pnl": 0.09295041302124218,
+        "pnl_percent": 0.09295041302124218
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "RUN",
+      "signal": "BUY",
+      "score": 72.1,
+      "technical_score": 79.7,
+      "momentum_score": 75.0,
+      "price": 20.2,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 98)",
+        "Strong weekly momentum +11.1%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SEDG",
+      "signal": "BUY",
+      "score": 71.8,
+      "technical_score": 75.0,
+      "momentum_score": 80.0,
+      "price": 36.25,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +18.3%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ENPH",
+      "signal": "BUY",
+      "score": 70.0,
+      "technical_score": 75.0,
+      "momentum_score": 75.0,
+      "price": 48.01,
+      "target_upside": 21.4,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +31.8%",
+        "Strong monthly gain +35.6%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "BMRN",
+      "signal": "BUY",
+      "score": 65.8,
+      "technical_score": 85.2,
+      "momentum_score": 50.0,
+      "price": 57.83,
+      "target_upside": 15.6,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [
+        "Bollinger squeeze - breakout imminent",
+        "Strong uptrend (strength: 76)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "NVDA",
+      "signal": "BUY",
+      "score": 61.6,
+      "technical_score": 68.0,
+      "momentum_score": 60.0,
+      "price": 191.29,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 90)"
+      ],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 78,
+    "total_predictions": 361,
+    "win_rate": 0.24878048780487805,
+    "signal_performance": {
+      "strong_buy_win_rate": 0,
+      "buy_win_rate": 0.25,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
