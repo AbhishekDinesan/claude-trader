@@ -1,8 +1,8 @@
 {
-  "portfolio_value": 1000.22,
-  "total_return_pct": 0.02,
+  "portfolio_value": 1003.83,
+  "total_return_pct": 0.38,
   "positions": 6,
-  "last_updated": "2026-02-19T15:13:48.699262",
-  "predictions_tracked": 673,
-  "win_rate": 38.5
+  "last_updated": "2026-02-20T15:08:14.524967",
+  "predictions_tracked": 712,
+  "win_rate": 39.7
 }
