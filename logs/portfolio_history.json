@@ -139,8 +139,15 @@
       "return_pct": 3.81,
       "trades": 1,
       "positions": 4
+    },
+    {
+      "date": "2026-02-25",
+      "total_value": 1038.97,
+      "return_pct": 3.9,
+      "trades": 3,
+      "positions": 7
     }
   ],
   "start_date": "2026-01-31",
-  "last_updated": "2026-02-24T15:31:59.822263"
+  "last_updated": "2026-02-25T15:33:00.565888"
 }
