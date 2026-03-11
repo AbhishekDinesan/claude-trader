@@ -209,8 +209,15 @@
       "return_pct": -0.24,
       "trades": 0,
       "positions": 6
+    },
+    {
+      "date": "2026-03-11",
+      "total_value": 995.11,
+      "return_pct": -0.49,
+      "trades": 0,
+      "positions": 6
     }
   ],
   "start_date": "2026-01-31",
-  "last_updated": "2026-03-10T15:31:23.881634"
+  "last_updated": "2026-03-11T15:13:09.508547"
 }
