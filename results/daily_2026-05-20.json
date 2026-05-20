@@ -1,0 +1,272 @@
+{
+  "date": "2026-05-20",
+  "timestamp": "2026-05-20T17:39:04.787313",
+  "portfolio": {
+    "date": "2026-05-20",
+    "total_value": 953.08,
+    "cash": 0.0,
+    "positions_value": 953.08,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": -46.92,
+    "total_return_pct": -4.69,
+    "vs_spy": -11.45,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 22.700000762939453,
+        "current_value": 190.1172660025398,
+        "pnl": -9.882733997460207,
+        "pnl_percent": -4.941366998730112
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 2.3377337109580374,
+        "entry_price": 49.740501403808594,
+        "entry_date": "2026-02-25",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 53.32500076293945,
+        "current_value": 124.65965192038662,
+        "pnl": 8.379604988747687,
+        "pnl_percent": 7.2063997305350735
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 16.024999618530273,
+        "current_value": 72.41718295501306,
+        "pnl": -9.489929201286188,
+        "pnl_percent": -11.58620900121229
+      },
+      {
+        "symbol": "MARA",
+        "shares": 5.247838998996534,
+        "entry_price": 12.074999809265137,
+        "entry_date": "2026-04-30",
+        "entry_reason": "BUY (Score: 72.6) - MACD bullish crossover",
+        "current_price": 13.475000381469727,
+        "current_value": 70.71463251337,
+        "pnl": 7.346977601432712,
+        "pnl_percent": 11.594207820445446
+      },
+      {
+        "symbol": "RGTI",
+        "shares": 5.549895525332779,
+        "entry_price": 20.21500015258789,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 81.5) - Strong uptrend (strength: 100)",
+        "current_price": 16.954999923706055,
+        "current_value": 94.09847820859385,
+        "pnl": -18.09266068285514,
+        "pnl_percent": -16.126639645186923
+      },
+      {
+        "symbol": "SMCI",
+        "shares": 3.2304461707775354,
+        "entry_price": 34.72930145263672,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 80.2) - Golden cross (MA bullish)",
+        "current_price": 33.67499923706055,
+        "current_value": 108.78527233629868,
+        "pnl": -3.405866555150311,
+        "pnl_percent": -3.035771442204249
+      },
+      {
+        "symbol": "FCEL",
+        "shares": 6.891390098681297,
+        "entry_price": 16.27989959716797,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)",
+        "current_price": 20.0,
+        "current_value": 137.82780197362595,
+        "pnl": 25.636663082176966,
+        "pnl_percent": 22.850880502230964
+      },
+      {
+        "symbol": "ARM",
+        "shares": 0.20379009702864048,
+        "entry_price": 252.7050018310547,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 252.53050231933594,
+        "current_value": 51.463215570348794,
+        "pnl": -0.0355612724246086,
+        "pnl_percent": -0.06905265446047748
+      },
+      {
+        "symbol": "SEDG",
+        "shares": 0.9113215072092778,
+        "entry_price": 56.5099983215332,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)",
+        "current_price": 56.505001068115234,
+        "current_value": 51.49422273825663,
+        "pnl": -0.004554104516770963,
+        "pnl_percent": -0.008843131421687467
+      },
+      {
+        "symbol": "AMC",
+        "shares": 33.549692483788405,
+        "entry_price": 1.534999966621399,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 75.8) - Strong uptrend (strength: 100)",
+        "current_price": 1.534999966621399,
+        "current_value": 51.4987768427734,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "ARM",
+      "signal": "STRONG BUY",
+      "score": 85.5,
+      "technical_score": 90.0,
+      "momentum_score": 100,
+      "price": 252.71,
+      "target_upside": 26.4,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +14.2%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SEDG",
+      "signal": "STRONG BUY",
+      "score": 83.8,
+      "technical_score": 90.0,
+      "momentum_score": 95.0,
+      "price": 56.51,
+      "target_upside": 23.6,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +32.1%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ENPH",
+      "signal": "STRONG BUY",
+      "score": 81.0,
+      "technical_score": 80.0,
+      "momentum_score": 100,
+      "price": 53.3,
+      "target_upside": 35.1,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +26.9%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "AMC",
+      "signal": "STRONG BUY",
+      "score": 75.8,
+      "technical_score": 80.0,
+      "momentum_score": 85.0,
+      "price": 1.53,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +15.0%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "BBBY",
+      "signal": "BUY",
+      "score": 74.0,
+      "technical_score": 80.0,
+      "momentum_score": 80.0,
+      "price": 5.24,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +10.9%"
+      ],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "BUY",
+      "symbol": "ARM",
+      "shares": 0.20379009702864048,
+      "price": 252.7050018310547,
+      "reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover"
+    },
+    {
+      "action": "BUY",
+      "symbol": "SEDG",
+      "shares": 0.9113215072092778,
+      "price": 56.5099983215332,
+      "reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "AMC",
+      "shares": 33.549692483788405,
+      "price": 1.534999966621399,
+      "reason": "STRONG BUY (Score: 75.8) - Strong uptrend (strength: 100)"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 3163,
+    "win_rate": 0.4692982456140351,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.40594059405940597,
+      "buy_win_rate": 0.34794156706507307,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
