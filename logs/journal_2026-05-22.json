@@ -1,0 +1,809 @@
+{
+  "date": "2026-05-22",
+  "timestamp": "2026-05-22T16:43:07.239268",
+  "portfolio": {
+    "date": "2026-05-22",
+    "total_value": 1088.35,
+    "cash": 0.0,
+    "positions_value": 1088.35,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": 88.35,
+    "total_return_pct": 8.83,
+    "vs_spy": 1.13,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 22.040000915527344,
+        "current_value": 184.5896288952785,
+        "pnl": -15.410371104721492,
+        "pnl_percent": -7.70518555236076
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 2.3377337109580374,
+        "entry_price": 49.740501403808594,
+        "entry_date": "2026-02-25",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 64.02999877929688,
+        "current_value": 149.68508665896428,
+        "pnl": 33.405039727325345,
+        "pnl_percent": 28.728092745752143
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 15.864999771118164,
+        "current_value": 71.69414155104207,
+        "pnl": -10.212970605257183,
+        "pnl_percent": -12.468966780037716
+      },
+      {
+        "symbol": "RGTI",
+        "shares": 5.549895525332779,
+        "entry_price": 20.21500015258789,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 81.5) - Strong uptrend (strength: 100)",
+        "current_price": 27.110000610351562,
+        "current_value": 150.45767107915904,
+        "pnl": 38.266532187710055,
+        "pnl_percent": 34.108337401525986
+      },
+      {
+        "symbol": "SMCI",
+        "shares": 3.2304461707775354,
+        "entry_price": 34.72930145263672,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 80.2) - Golden cross (MA bullish)",
+        "current_price": 35.19499969482422,
+        "current_value": 113.69555199466143,
+        "pnl": 1.5044131032124426,
+        "pnl_percent": 1.3409375446915117
+      },
+      {
+        "symbol": "ARM",
+        "shares": 0.20379009702864048,
+        "entry_price": 252.7050018310547,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 307.1199951171875,
+        "current_value": 62.588013604367234,
+        "pnl": 11.089236761593831,
+        "pnl_percent": 21.53300998866332
+      },
+      {
+        "symbol": "SEDG",
+        "shares": 0.9113215072092778,
+        "entry_price": 56.5099983215332,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)",
+        "current_price": 62.28499984741211,
+        "current_value": 56.76165993747325,
+        "pnl": 5.262883094699845,
+        "pnl_percent": 10.219433193078565
+      },
+      {
+        "symbol": "AMC",
+        "shares": 33.549692483788405,
+        "entry_price": 1.534999966621399,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 75.8) - Strong uptrend (strength: 100)",
+        "current_price": 1.559999942779541,
+        "current_value": 52.33751835498111,
+        "pnl": 0.8387415122077044,
+        "pnl_percent": 1.6286629773138106
+      },
+      {
+        "symbol": "IONQ",
+        "shares": 1.2707411073441934,
+        "entry_price": 64.66999816894531,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 64.66999816894531,
+        "current_value": 82.17882508515252,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "QUBT",
+        "shares": 6.244496614180754,
+        "entry_price": 13.160200119018555,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 13.160200119018555,
+        "current_value": 82.17882508515252,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "BB",
+        "shares": 10.493771554317144,
+        "entry_price": 7.831200122833252,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 81.0) - MACD bullish crossover",
+        "current_price": 7.831200122833252,
+        "current_value": 82.1788250851525,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "scan_results": [
+    {
+      "symbol": "IONQ",
+      "signal": "STRONG BUY",
+      "score": 85.5,
+      "technical_score": 90.0,
+      "momentum_score": 100,
+      "price": 64.58,
+      "target_upside": 28.8,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +24.3%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "RGTI",
+      "signal": "STRONG BUY",
+      "score": 85.5,
+      "technical_score": 90.0,
+      "momentum_score": 100,
+      "price": 27.12,
+      "target_upside": 36.5,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "High volume (3.2x avg)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +51.9%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "QUBT",
+      "signal": "STRONG BUY",
+      "score": 85.5,
+      "technical_score": 90.0,
+      "momentum_score": 100,
+      "price": 13.16,
+      "target_upside": 27.2,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "High volume (1.7x avg)",
+        "Strong uptrend (strength: 100)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "BB",
+      "signal": "STRONG BUY",
+      "score": 81.0,
+      "technical_score": 80.0,
+      "momentum_score": 100,
+      "price": 7.84,
+      "target_upside": 29.2,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +26.6%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "AMC",
+      "signal": "STRONG BUY",
+      "score": 79.5,
+      "technical_score": 100,
+      "momentum_score": 70.0,
+      "price": 1.55,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +21.1%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ENPH",
+      "signal": "STRONG BUY",
+      "score": 79.2,
+      "technical_score": 80.0,
+      "momentum_score": 95.0,
+      "price": 64.04,
+      "target_upside": 46.3,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +21.1%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "SMCI",
+      "signal": "STRONG BUY",
+      "score": 79.2,
+      "technical_score": 80.0,
+      "momentum_score": 95.0,
+      "price": 35.19,
+      "target_upside": 18.9,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +13.4%",
+        "Strong monthly gain +31.6%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "MARA",
+      "signal": "STRONG BUY",
+      "score": 76.2,
+      "technical_score": 85.0,
+      "momentum_score": 80.0,
+      "price": 13.89,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +11.7%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ARM",
+      "signal": "BUY",
+      "score": 74.8,
+      "technical_score": 70.0,
+      "momentum_score": 95.0,
+      "price": 306.93,
+      "target_upside": 30.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +46.7%",
+        "Strong monthly gain +50.0%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "FCEL",
+      "signal": "BUY",
+      "score": 73.0,
+      "technical_score": 70.0,
+      "momentum_score": 90.0,
+      "price": 26.39,
+      "target_upside": 50,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +23.5%",
+        "Strong monthly gain +116.8%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "PLUG",
+      "signal": "BUY",
+      "score": 72.8,
+      "technical_score": 85.0,
+      "momentum_score": 70.0,
+      "price": 3.86,
+      "target_upside": 12.8,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong monthly gain +21.4%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "CRWD",
+      "signal": "BUY",
+      "score": 72.7,
+      "technical_score": 69.2,
+      "momentum_score": 90.0,
+      "price": 671.19,
+      "target_upside": 30.4,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 96)",
+        "Strong weekly momentum +13.0%",
+        "Strong monthly gain +50.7%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "NVAX",
+      "signal": "BUY",
+      "score": 69.7,
+      "technical_score": 86.0,
+      "momentum_score": 60.0,
+      "price": 9.11,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 80)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SEDG",
+      "signal": "BUY",
+      "score": 68.8,
+      "technical_score": 80.0,
+      "momentum_score": 65.0,
+      "price": 62.15,
+      "target_upside": 18.7,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong monthly gain +31.2%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "AMD",
+      "signal": "BUY",
+      "score": 68.5,
+      "technical_score": 60.0,
+      "momentum_score": 90.0,
+      "price": 466.79,
+      "target_upside": 31.7,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +10.1%",
+        "Strong monthly gain +52.9%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "DDOG",
+      "signal": "BUY",
+      "score": 68.2,
+      "technical_score": 63.3,
+      "momentum_score": 85.0,
+      "price": 222.69,
+      "target_upside": 44.5,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 92)",
+        "Strong monthly gain +74.2%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "BBBY",
+      "signal": "BUY",
+      "score": 67.0,
+      "technical_score": 80.0,
+      "momentum_score": 60.0,
+      "price": 5.59,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +22.2%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "NET",
+      "signal": "BUY",
+      "score": 65.8,
+      "technical_score": 73.4,
+      "momentum_score": 65.0,
+      "price": 215.52,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 92)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "TSLA",
+      "signal": "BUY",
+      "score": 65.2,
+      "technical_score": 72.0,
+      "momentum_score": 65.0,
+      "price": 426.44,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 85)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "RUN",
+      "signal": "BUY",
+      "score": 64.4,
+      "technical_score": 74.2,
+      "momentum_score": 60.0,
+      "price": 14.62,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 96)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "RIOT",
+      "signal": "BUY",
+      "score": 64.3,
+      "technical_score": 58.4,
+      "momentum_score": 80.0,
+      "price": 24.74,
+      "target_upside": 21.5,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 92)",
+        "Strong monthly gain +35.9%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "BMRN",
+      "signal": "HOLD",
+      "score": 59.0,
+      "technical_score": 70.0,
+      "momentum_score": 50.0,
+      "price": 54.06,
+      "target_upside": 10,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [
+        "MACD bullish crossover"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "XPEV",
+      "signal": "HOLD",
+      "score": 59.0,
+      "technical_score": 70.0,
+      "momentum_score": 50.0,
+      "price": 15.48,
+      "target_upside": 10,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [
+        "MACD bullish crossover"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SRPT",
+      "signal": "HOLD",
+      "score": 58.5,
+      "technical_score": 65.0,
+      "momentum_score": 55.0,
+      "price": 17.13,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "RSI oversold - potential bounce"
+      ],
+      "bearish_factors": [
+        "Death cross (MA bearish)"
+      ]
+    },
+    {
+      "symbol": "EXAS",
+      "signal": "HOLD",
+      "score": 54.7,
+      "technical_score": 60.5,
+      "momentum_score": 50.0,
+      "price": 104.91,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 77)"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "signal": "HOLD",
+      "score": 52.2,
+      "technical_score": 55.0,
+      "momentum_score": 50.0,
+      "price": 216.54,
+      "target_upside": 10,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "LCID",
+      "signal": "HOLD",
+      "score": 51.8,
+      "technical_score": 50.0,
+      "momentum_score": 55.0,
+      "price": 5.93,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "PLTR",
+      "signal": "HOLD",
+      "score": 50.0,
+      "technical_score": 50.0,
+      "momentum_score": 50.0,
+      "price": 136.47,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "RIVN",
+      "signal": "HOLD",
+      "score": 49.5,
+      "technical_score": 45.0,
+      "momentum_score": 55.0,
+      "price": 14.25,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "BNTX",
+      "signal": "HOLD",
+      "score": 49.0,
+      "technical_score": 40.0,
+      "momentum_score": 60.0,
+      "price": 92.8,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SOFI",
+      "signal": "HOLD",
+      "score": 47.8,
+      "technical_score": 45.0,
+      "momentum_score": 50.0,
+      "price": 15.57,
+      "target_upside": 7.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": [
+        "Downtrend (strength: 0)"
+      ]
+    },
+    {
+      "symbol": "MRNA",
+      "signal": "HOLD",
+      "score": 47.8,
+      "technical_score": 45.0,
+      "momentum_score": 50.0,
+      "price": 47.02,
+      "target_upside": 7.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": [
+        "Downtrend (strength: 0)"
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "signal": "HOLD",
+      "score": 47.8,
+      "technical_score": 45.0,
+      "momentum_score": 50.0,
+      "price": 74.59,
+      "target_upside": 10,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SANA",
+      "signal": "HOLD",
+      "score": 45.5,
+      "technical_score": 40.0,
+      "momentum_score": 50.0,
+      "price": 3.15,
+      "target_upside": 10,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "COIN",
+      "signal": "HOLD",
+      "score": 44.2,
+      "technical_score": 45.0,
+      "momentum_score": 40.0,
+      "price": 189.52,
+      "target_upside": 10,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "LI",
+      "signal": "HOLD",
+      "score": 43.5,
+      "technical_score": 55.0,
+      "momentum_score": 25.0,
+      "price": 15.86,
+      "target_upside": 7.0,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [],
+      "bearish_factors": [
+        "Death cross (MA bearish)",
+        "Downtrend (strength: 0)",
+        "Weak weekly momentum -14.3%"
+      ]
+    },
+    {
+      "symbol": "GME",
+      "signal": "HOLD",
+      "score": 42.0,
+      "technical_score": 40.0,
+      "momentum_score": 40.0,
+      "price": 22.04,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [],
+      "bearish_factors": [
+        "Death cross (MA bearish)"
+      ]
+    },
+    {
+      "symbol": "NIO",
+      "signal": "HOLD",
+      "score": 41.8,
+      "technical_score": 55.0,
+      "momentum_score": 20.0,
+      "price": 5.28,
+      "target_upside": 7.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "High volume (1.6x avg)"
+      ],
+      "bearish_factors": [
+        "Death cross (MA bearish)",
+        "Downtrend (strength: 0)",
+        "Weak weekly momentum -13.5%"
+      ]
+    }
+  ],
+  "trades": [
+    {
+      "action": "BUY",
+      "symbol": "IONQ",
+      "shares": 1.2707411073441934,
+      "price": 64.66999816894531,
+      "reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover"
+    },
+    {
+      "action": "BUY",
+      "symbol": "QUBT",
+      "shares": 6.244496614180754,
+      "price": 13.160200119018555,
+      "reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover"
+    },
+    {
+      "action": "BUY",
+      "symbol": "BB",
+      "shares": 10.493771554317144,
+      "price": 7.831200122833252,
+      "reason": "STRONG BUY (Score: 81.0) - MACD bullish crossover"
+    }
+  ],
+  "discoveries": [],
+  "learning": {
+    "predictions_evaluated": 0,
+    "total_predictions": 3239,
+    "win_rate": 0.4711762745751416,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.4117647058823529,
+      "buy_win_rate": 0.3526315789473684,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
