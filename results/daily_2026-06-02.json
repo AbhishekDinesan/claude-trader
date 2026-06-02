@@ -1,0 +1,239 @@
+{
+  "date": "2026-06-02",
+  "timestamp": "2026-06-02T18:20:52.701989",
+  "portfolio": {
+    "date": "2026-06-02",
+    "total_value": 1183.23,
+    "cash": 269.31,
+    "positions_value": 913.92,
+    "daily_change": -0.1,
+    "daily_change_pct": -0.01,
+    "total_return": 183.23,
+    "total_return_pct": 18.32,
+    "vs_spy": 8.9,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 20.979999542236328,
+        "current_value": 175.71189513863303,
+        "pnl": -24.288104861366975,
+        "pnl_percent": -12.144052430683494
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 2.3377337109580374,
+        "entry_price": 49.740501403808594,
+        "entry_date": "2026-02-25",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 70.19999694824219,
+        "current_value": 164.10889937505712,
+        "pnl": 47.828852443418185,
+        "pnl_percent": 41.13246744003875
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 15.375,
+        "current_value": 69.47982617396418,
+        "pnl": -12.427285982335064,
+        "pnl_percent": -15.172413793103445
+      },
+      {
+        "symbol": "SMCI",
+        "shares": 3.2304461707775354,
+        "entry_price": 34.72930145263672,
+        "entry_date": "2026-05-11",
+        "entry_reason": "STRONG BUY (Score: 80.2) - Golden cross (MA bullish)",
+        "current_price": 50.14500045776367,
+        "current_value": 161.99072471242042,
+        "pnl": 49.79958582097143,
+        "pnl_percent": 44.388163194559624
+      },
+      {
+        "symbol": "SEDG",
+        "shares": 0.9113215072092778,
+        "entry_price": 56.5099983215332,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)",
+        "current_price": 78.1500015258789,
+        "current_value": 71.21977717897133,
+        "pnl": 19.721000336197925,
+        "pnl_percent": 38.29411404547813
+      },
+      {
+        "symbol": "IONQ",
+        "shares": 1.2707411073441934,
+        "entry_price": 64.66999816894531,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 70.54000091552734,
+        "current_value": 89.63807887545764,
+        "pnl": 7.459253790305112,
+        "pnl_percent": 9.076856212748163
+      },
+      {
+        "symbol": "QUBT",
+        "shares": 6.244496614180754,
+        "entry_price": 13.160200119018555,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 85.5) - MACD bullish crossover",
+        "current_price": 12.0600004196167,
+        "current_value": 75.30863178731495,
+        "pnl": -6.870193297837574,
+        "pnl_percent": -8.360052958555652
+      },
+      {
+        "symbol": "BB",
+        "shares": 10.493771554317144,
+        "entry_price": 7.831200122833252,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 81.0) - MACD bullish crossover",
+        "current_price": 10.148300170898438,
+        "current_value": 106.49394365804584,
+        "pnl": 24.31511857289334,
+        "pnl_percent": 29.588058173986266
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "IONQ",
+      "signal": "STRONG BUY",
+      "score": 77.1,
+      "technical_score": 79.0,
+      "momentum_score": 90.0,
+      "price": 70.69,
+      "target_upside": 31.8,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 95)",
+        "Strong weekly momentum +11.1%",
+        "Strong monthly gain +53.0%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "BB",
+      "signal": "STRONG BUY",
+      "score": 76.5,
+      "technical_score": 70.0,
+      "momentum_score": 100,
+      "price": 10.18,
+      "target_upside": 50,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +20.8%",
+        "Strong monthly gain +87.7%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "SMCI",
+      "signal": "STRONG BUY",
+      "score": 76.5,
+      "technical_score": 70.0,
+      "momentum_score": 100,
+      "price": 50.16,
+      "target_upside": 50,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +35.2%",
+        "Strong monthly gain +85.2%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "RGTI",
+      "signal": "STRONG BUY",
+      "score": 75.2,
+      "technical_score": 78.7,
+      "momentum_score": 85.0,
+      "price": 26.43,
+      "target_upside": 30.6,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 93)",
+        "Strong monthly gain +51.0%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "HOOD",
+      "signal": "BUY",
+      "score": 73.2,
+      "technical_score": 90.0,
+      "momentum_score": 65.0,
+      "price": 87.99,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +18.8%"
+      ],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "SELL",
+      "symbol": "RGTI",
+      "shares": 5.549895525332779,
+      "price": 26.40999984741211,
+      "reason": "Hit target: +30.6%"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 3498,
+    "win_rate": 0.4813466787989081,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.5064935064935064,
+      "buy_win_rate": 0.3978622327790974,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
