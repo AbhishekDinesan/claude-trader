@@ -1,0 +1,195 @@
+{
+  "date": "2026-06-10",
+  "timestamp": "2026-06-10T17:41:52.042051",
+  "portfolio": {
+    "date": "2026-06-10",
+    "total_value": 998.25,
+    "cash": 80.33,
+    "positions_value": 917.93,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": -1.75,
+    "total_return_pct": -0.17,
+    "vs_spy": -5.21,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 22.44499969482422,
+        "current_value": 187.98157858983512,
+        "pnl": -12.018421410164876,
+        "pnl_percent": -6.009210705082435
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 2.3377337109580374,
+        "entry_price": 49.740501403808594,
+        "entry_date": "2026-02-25",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 51.31999969482422,
+        "current_value": 119.97249333294677,
+        "pnl": 3.6924464013078335,
+        "pnl_percent": 3.1754772196459724
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 13.824999809265137,
+        "current_value": 62.47535503107836,
+        "pnl": -19.43175712522089,
+        "pnl_percent": -23.72413898336476
+      },
+      {
+        "symbol": "SEDG",
+        "shares": 0.9113215072092778,
+        "entry_price": 56.5099983215332,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)",
+        "current_price": 55.309898376464844,
+        "current_value": 50.40509995203193,
+        "pnl": -1.0936768907414702,
+        "pnl_percent": -2.1236948871241834
+      },
+      {
+        "symbol": "BB",
+        "shares": 10.493771554317144,
+        "entry_price": 7.831200122833252,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 81.0) - MACD bullish crossover",
+        "current_price": 8.930000305175781,
+        "current_value": 93.70938318249702,
+        "pnl": 11.530558097344525,
+        "pnl_percent": 14.031057374447409
+      },
+      {
+        "symbol": "ARM",
+        "shares": 0.21621963157028004,
+        "entry_price": 415.17999267578125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 74.8) - Strong uptrend (strength: 100)",
+        "current_price": 307.27349853515625,
+        "current_value": 66.43856264458246,
+        "pnl": -23.33150240712652,
+        "pnl_percent": -25.99029241394356
+      },
+      {
+        "symbol": "DDOG",
+        "shares": 0.3616042508149412,
+        "entry_price": 248.2550048828125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 71.0) - Strong uptrend (strength: 100)",
+        "current_price": 229.48500061035156,
+        "current_value": 82.9827517189725,
+        "pnl": -6.787313332736488,
+        "pnl_percent": -7.560775776231066
+      },
+      {
+        "symbol": "RIOT",
+        "shares": 3.2106605147051672,
+        "entry_price": 27.959999084472656,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 70.2) - Strong uptrend (strength: 77)",
+        "current_price": 23.80500030517578,
+        "current_value": 76.42977453237233,
+        "pnl": -13.340290519336648,
+        "pnl_percent": -14.860511142163514
+      },
+      {
+        "symbol": "IONQ",
+        "shares": 1.433304838415005,
+        "entry_price": 63.43000030517578,
+        "entry_date": "2026-06-08",
+        "entry_reason": "BUY (Score: 62.8) - Strong monthly gain +33.1%",
+        "current_price": 57.540000915527344,
+        "current_value": 82.47236171462916,
+        "pnl": -8.442164623444526,
+        "pnl_percent": -9.28582588887017
+      },
+      {
+        "symbol": "HOOD",
+        "shares": 1.0777609237164583,
+        "entry_price": 84.3550033569336,
+        "entry_date": "2026-06-08",
+        "entry_reason": "BUY (Score: 62.0)",
+        "current_price": 88.19999694824219,
+        "current_value": 95.0585101827263,
+        "pnl": 4.14398384465261,
+        "pnl_percent": 4.558109701020552
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "AMC",
+      "signal": "STRONG BUY",
+      "score": 76.0,
+      "technical_score": 76.7,
+      "momentum_score": 90.0,
+      "price": 2.03,
+      "target_upside": 26.2,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 83)",
+        "Strong weekly momentum +10.7%",
+        "Strong monthly gain +43.6%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "HOOD",
+      "signal": "BUY",
+      "score": 65.5,
+      "technical_score": 65.0,
+      "momentum_score": 75.0,
+      "price": 88.29,
+      "target_upside": 10,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 3720,
+    "win_rate": 0.463768115942029,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.45161290322580644,
+      "buy_win_rate": 0.3667017913593256,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
