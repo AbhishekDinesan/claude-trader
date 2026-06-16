@@ -1,0 +1,294 @@
+{
+  "date": "2026-06-16",
+  "timestamp": "2026-06-16T18:42:23.928427",
+  "portfolio": {
+    "date": "2026-06-16",
+    "total_value": 1044.28,
+    "cash": 0.0,
+    "positions_value": 1044.28,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": 44.28,
+    "total_return_pct": 4.43,
+    "vs_spy": -4.01,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 21.235000610351562,
+        "current_value": 177.8475825513377,
+        "pnl": -22.152417448662305,
+        "pnl_percent": -11.07620872433116
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 2.3377337109580374,
+        "entry_price": 49.740501403808594,
+        "entry_date": "2026-02-25",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 51.67499923706055,
+        "current_value": 120.8023877302073,
+        "pnl": 4.522340798568365,
+        "pnl_percent": 3.88918040360533
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 14.164999961853027,
+        "current_value": 64.01182016935009,
+        "pnl": -17.89529198694916,
+        "pnl_percent": -21.848276072535022
+      },
+      {
+        "symbol": "SEDG",
+        "shares": 0.9113215072092778,
+        "entry_price": 56.5099983215332,
+        "entry_date": "2026-05-20",
+        "entry_reason": "STRONG BUY (Score: 83.8) - Golden cross (MA bullish)",
+        "current_price": 58.619998931884766,
+        "current_value": 53.42166577921148,
+        "pnl": 1.9228889364380777,
+        "pnl_percent": 3.7338536064821293
+      },
+      {
+        "symbol": "BB",
+        "shares": 10.493771554317144,
+        "entry_price": 7.831200122833252,
+        "entry_date": "2026-05-22",
+        "entry_reason": "STRONG BUY (Score: 81.0) - MACD bullish crossover",
+        "current_price": 9.125,
+        "current_value": 95.75566543314393,
+        "pnl": 13.576840347991435,
+        "pnl_percent": 16.521093279106047
+      },
+      {
+        "symbol": "ARM",
+        "shares": 0.21621963157028004,
+        "entry_price": 415.17999267578125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 74.8) - Strong uptrend (strength: 100)",
+        "current_price": 411.4093017578125,
+        "current_value": 88.95476765066039,
+        "pnl": -0.8152974010485963,
+        "pnl_percent": -0.9082063164140286
+      },
+      {
+        "symbol": "DDOG",
+        "shares": 0.3616042508149412,
+        "entry_price": 248.2550048828125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 71.0) - Strong uptrend (strength: 100)",
+        "current_price": 232.76730346679688,
+        "current_value": 84.16964638432515,
+        "pnl": -5.600418667383835,
+        "pnl_percent": -6.238626054417917
+      },
+      {
+        "symbol": "RIOT",
+        "shares": 3.2106605147051672,
+        "entry_price": 27.959999084472656,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 70.2) - Strong uptrend (strength: 77)",
+        "current_price": 27.979999542236328,
+        "current_value": 89.83427973172684,
+        "pnl": 0.06421468001785513,
+        "pnl_percent": 0.07153239777744069
+      },
+      {
+        "symbol": "IONQ",
+        "shares": 1.433304838415005,
+        "entry_price": 63.43000030517578,
+        "entry_date": "2026-06-08",
+        "entry_reason": "BUY (Score: 62.8) - Strong monthly gain +33.1%",
+        "current_price": 57.45000076293945,
+        "current_value": 82.34336406046684,
+        "pnl": -8.571162277606845,
+        "pnl_percent": -9.427714824949119
+      },
+      {
+        "symbol": "AMC",
+        "shares": 25.3570610741372,
+        "entry_price": 2.4600000381469727,
+        "entry_date": "2026-06-16",
+        "entry_reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)",
+        "current_price": 2.4600000381469727,
+        "current_value": 62.37837120967263,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "HOOD",
+        "shares": 0.6490310146034287,
+        "entry_price": 96.11000061035156,
+        "entry_date": "2026-06-16",
+        "entry_reason": "BUY (Score: 72.2) - Strong uptrend (strength: 100)",
+        "current_price": 96.11000061035156,
+        "current_value": 62.37837120967263,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "MARA",
+        "shares": 4.201950105893024,
+        "entry_price": 14.845100402832031,
+        "entry_date": "2026-06-16",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 14.845100402832031,
+        "current_value": 62.37837120967263,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "ARM",
+      "signal": "STRONG BUY",
+      "score": 76.5,
+      "technical_score": 70.0,
+      "momentum_score": 100,
+      "price": 410.99,
+      "target_upside": 47.9,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +18.6%",
+        "Strong monthly gain +79.9%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "AMC",
+      "signal": "STRONG BUY",
+      "score": 76.5,
+      "technical_score": 70.0,
+      "momentum_score": 100,
+      "price": 2.46,
+      "target_upside": 50,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +26.8%",
+        "Strong monthly gain +92.2%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "RIOT",
+      "signal": "BUY",
+      "score": 74.0,
+      "technical_score": 80.0,
+      "momentum_score": 80.0,
+      "price": 27.98,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +10.6%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "HOOD",
+      "signal": "BUY",
+      "score": 72.2,
+      "technical_score": 80.0,
+      "momentum_score": 75.0,
+      "price": 96.16,
+      "target_upside": 14.8,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +14.8%",
+        "Strong monthly gain +24.7%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "MARA",
+      "signal": "BUY",
+      "score": 70.0,
+      "technical_score": 75.0,
+      "momentum_score": 75.0,
+      "price": 14.85,
+      "target_upside": 12.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +11.6%"
+      ],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "BUY",
+      "symbol": "AMC",
+      "shares": 25.3570610741372,
+      "price": 2.4600000381469727,
+      "reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "HOOD",
+      "shares": 0.6490310146034287,
+      "price": 96.11000061035156,
+      "reason": "BUY (Score: 72.2) - Strong uptrend (strength: 100)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "MARA",
+      "shares": 4.201950105893024,
+      "price": 14.845100402832031,
+      "reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 36,
+    "total_predictions": 3868,
+    "win_rate": 0.46399345335515546,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.45454545454545453,
+      "buy_win_rate": 0.36715481171548114,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
