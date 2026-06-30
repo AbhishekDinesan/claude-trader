@@ -1,0 +1,310 @@
+{
+  "date": "2026-06-30",
+  "timestamp": "2026-06-30T16:36:17.185555",
+  "portfolio": {
+    "date": "2026-06-30",
+    "total_value": 1025.17,
+    "cash": 0.0,
+    "positions_value": 1025.17,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": 25.17,
+    "total_return_pct": 2.52,
+    "vs_spy": -5.36,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 21.940000534057617,
+        "current_value": 183.75210473293245,
+        "pnl": -16.24789526706755,
+        "pnl_percent": -8.12394763353378
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 11.800000190734863,
+        "current_value": 53.32435525886196,
+        "pnl": -28.582756897437292,
+        "pnl_percent": -34.896550671807645
+      },
+      {
+        "symbol": "DDOG",
+        "shares": 0.3616042508149412,
+        "entry_price": 248.2550048828125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 71.0) - Strong uptrend (strength: 100)",
+        "current_price": 258.3399963378906,
+        "current_value": 93.41684083129759,
+        "pnl": 3.6467757795886087,
+        "pnl_percent": 4.062351717677837
+      },
+      {
+        "symbol": "RIOT",
+        "shares": 3.2106605147051672,
+        "entry_price": 27.959999084472656,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 70.2) - Strong uptrend (strength: 77)",
+        "current_price": 26.739999771118164,
+        "current_value": 85.8530614283543,
+        "pnl": -3.917003623354688,
+        "pnl_percent": -4.363373938849691
+      },
+      {
+        "symbol": "MARA",
+        "shares": 4.201950105893024,
+        "entry_price": 14.845100402832031,
+        "entry_date": "2026-06-16",
+        "entry_reason": "BUY (Score: 70.0) - Strong uptrend (strength: 100)",
+        "current_price": 13.369999885559082,
+        "current_value": 56.180072434914706,
+        "pnl": -6.198298774757923,
+        "pnl_percent": -9.936615295586293
+      },
+      {
+        "symbol": "RUN",
+        "shares": 4.6897759499370135,
+        "entry_price": 15.774999618530273,
+        "entry_date": "2026-06-24",
+        "entry_reason": "STRONG BUY (Score: 88.2) - MACD bullish crossover",
+        "current_price": 13.899999618530273,
+        "current_value": 65.18788391511694,
+        "pnl": -8.793329906131902,
+        "pnl_percent": -11.88589569154418
+      },
+      {
+        "symbol": "BBBY",
+        "shares": 10.968304681463557,
+        "entry_price": 6.744999885559082,
+        "entry_date": "2026-06-24",
+        "entry_reason": "STRONG BUY (Score: 78.0) - Strong uptrend (strength: 100)",
+        "current_price": 5.864999771118164,
+        "current_value": 64.32910444633805,
+        "pnl": -9.652109374910793,
+        "pnl_percent": -13.046703178231056
+      },
+      {
+        "symbol": "SOFI",
+        "shares": 4.191522718254936,
+        "entry_price": 17.65019989013672,
+        "entry_date": "2026-06-24",
+        "entry_reason": "STRONG BUY (Score: 75.8) - Golden cross (MA bullish)",
+        "current_price": 18.036500930786133,
+        "current_value": 75.60040340921638,
+        "pnl": 1.61918958796754,
+        "pnl_percent": 2.188649664332054
+      },
+      {
+        "symbol": "BB",
+        "shares": 5.032302461917105,
+        "entry_price": 11.074999809265137,
+        "entry_date": "2026-06-26",
+        "entry_reason": "STRONG BUY (Score: 83.8) - MACD bullish crossover",
+        "current_price": 12.759900093078613,
+        "current_value": 64.2116766522158,
+        "pnl": 8.478927846319387,
+        "pnl_percent": 15.213546842717962
+      },
+      {
+        "symbol": "MRNA",
+        "shares": 0.84048787298852,
+        "entry_price": 66.30999755859375,
+        "entry_date": "2026-06-26",
+        "entry_reason": "BUY (Score: 69.5) - Strong uptrend (strength: 100)",
+        "current_price": 72.0999984741211,
+        "current_value": 60.599174359989576,
+        "pnl": 4.866425554093162,
+        "pnl_percent": 8.731716375665833
+      },
+      {
+        "symbol": "RIVN",
+        "shares": 4.2987806046394335,
+        "entry_price": 17.270000457763672,
+        "entry_date": "2026-06-30",
+        "entry_reason": "STRONG BUY (Score: 80.8) - MACD bullish crossover",
+        "current_price": 17.270000457763672,
+        "current_value": 74.2399430099486,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "FCEL",
+        "shares": 1.9855561439378417,
+        "entry_price": 37.38999938964844,
+        "entry_date": "2026-06-30",
+        "entry_reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)",
+        "current_price": 37.38999938964844,
+        "current_value": 74.2399430099486,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "NET",
+        "shares": 0.30300781467866716,
+        "entry_price": 245.00999450683594,
+        "entry_date": "2026-06-30",
+        "entry_reason": "STRONG BUY (Score: 75.4) - MACD bullish crossover",
+        "current_price": 245.00999450683594,
+        "current_value": 74.2399430099486,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "RIVN",
+      "signal": "STRONG BUY",
+      "score": 80.8,
+      "technical_score": 95.0,
+      "momentum_score": 80.0,
+      "price": 17.28,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +16.1%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "FCEL",
+      "signal": "STRONG BUY",
+      "score": 76.5,
+      "technical_score": 70.0,
+      "momentum_score": 100,
+      "price": 37.36,
+      "target_upside": 43.5,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +71.2%",
+        "Strong monthly gain +72.5%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "NET",
+      "signal": "STRONG BUY",
+      "score": 75.4,
+      "technical_score": 94.8,
+      "momentum_score": 65.0,
+      "price": 245.01,
+      "target_upside": 12.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "MACD bullish crossover",
+        "Strong uptrend (strength: 99)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "MRNA",
+      "signal": "BUY",
+      "score": 72.5,
+      "technical_score": 65.0,
+      "momentum_score": 95.0,
+      "price": 72.1,
+      "target_upside": 31.7,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +18.2%",
+        "Strong monthly gain +52.8%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "BB",
+      "signal": "BUY",
+      "score": 72.5,
+      "technical_score": 65.0,
+      "momentum_score": 95.0,
+      "price": 12.75,
+      "target_upside": 25.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +44.6%",
+        "Strong monthly gain +41.7%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "BUY",
+      "symbol": "RIVN",
+      "shares": 4.2987806046394335,
+      "price": 17.270000457763672,
+      "reason": "STRONG BUY (Score: 80.8) - MACD bullish crossover"
+    },
+    {
+      "action": "BUY",
+      "symbol": "FCEL",
+      "shares": 1.9855561439378417,
+      "price": 37.38999938964844,
+      "reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "NET",
+      "shares": 0.30300781467866716,
+      "price": 245.00999450683594,
+      "reason": "STRONG BUY (Score: 75.4) - MACD bullish crossover"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 4238,
+    "win_rate": 0.4625,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.4131455399061033,
+      "buy_win_rate": 0.3645933014354067,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
