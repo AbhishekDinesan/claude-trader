@@ -1,0 +1,256 @@
+{
+  "date": "2026-07-08",
+  "timestamp": "2026-07-08T16:14:13.470498",
+  "portfolio": {
+    "date": "2026-07-08",
+    "total_value": 962.59,
+    "cash": 51.64,
+    "positions_value": 910.95,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": -37.41,
+    "total_return_pct": -3.74,
+    "vs_spy": -11.05,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 21.850000381469727,
+        "current_value": 182.99833458426548,
+        "pnl": -17.00166541573452,
+        "pnl_percent": -8.500832707867268
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 12.100000381469727,
+        "current_value": 54.680060046140945,
+        "pnl": -27.227052110158304,
+        "pnl_percent": -33.241377205684266
+      },
+      {
+        "symbol": "DDOG",
+        "shares": 0.3616042508149412,
+        "entry_price": 248.2550048828125,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 71.0) - Strong uptrend (strength: 100)",
+        "current_price": 256.0,
+        "current_value": 92.57068820862494,
+        "pnl": 2.800623156915961,
+        "pnl_percent": 3.119774008521392
+      },
+      {
+        "symbol": "RIOT",
+        "shares": 3.2106605147051672,
+        "entry_price": 27.959999084472656,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 70.2) - Strong uptrend (strength: 77)",
+        "current_price": 20.639999389648438,
+        "current_value": 66.26803106388299,
+        "pnl": -23.502033987825996,
+        "pnl_percent": -26.18025727650799
+      },
+      {
+        "symbol": "SOFI",
+        "shares": 4.191522718254936,
+        "entry_price": 17.65019989013672,
+        "entry_date": "2026-06-24",
+        "entry_reason": "STRONG BUY (Score: 75.8) - Golden cross (MA bullish)",
+        "current_price": 17.315000534057617,
+        "current_value": 72.57621810509886,
+        "pnl": -1.4049957161499833,
+        "pnl_percent": -1.8991249853573478
+      },
+      {
+        "symbol": "BB",
+        "shares": 5.032302461917105,
+        "entry_price": 11.074999809265137,
+        "entry_date": "2026-06-26",
+        "entry_reason": "STRONG BUY (Score: 83.8) - MACD bullish crossover",
+        "current_price": 10.975000381469727,
+        "current_value": 55.229521439211275,
+        "pnl": -0.5032273666851381,
+        "pnl_percent": -0.9029293861635312
+      },
+      {
+        "symbol": "MRNA",
+        "shares": 0.84048787298852,
+        "entry_price": 66.30999755859375,
+        "entry_date": "2026-06-26",
+        "entry_reason": "BUY (Score: 69.5) - Strong uptrend (strength: 100)",
+        "current_price": 74.53500366210938,
+        "current_value": 62.64576669115786,
+        "pnl": 6.913017885261446,
+        "pnl_percent": 12.403870315705756
+      },
+      {
+        "symbol": "FCEL",
+        "shares": 1.9855561439378417,
+        "entry_price": 37.38999938964844,
+        "entry_date": "2026-06-30",
+        "entry_reason": "STRONG BUY (Score: 76.5) - Strong uptrend (strength: 100)",
+        "current_price": 22.834999084472656,
+        "current_value": 45.34017272898967,
+        "pnl": -28.899770280958933,
+        "pnl_percent": -38.92752217911346
+      },
+      {
+        "symbol": "NET",
+        "shares": 0.30300781467866716,
+        "entry_price": 245.00999450683594,
+        "entry_date": "2026-06-30",
+        "entry_reason": "STRONG BUY (Score: 75.4) - MACD bullish crossover",
+        "current_price": 264.7900085449219,
+        "current_value": 80.23344183794238,
+        "pnl": 5.9934988279937755,
+        "pnl_percent": 8.073145782440339
+      },
+      {
+        "symbol": "SANA",
+        "shares": 17.01899087532748,
+        "entry_price": 4.050000190734863,
+        "entry_date": "2026-07-07",
+        "entry_reason": "STRONG BUY (Score: 77.0) - Golden cross (MA bullish)",
+        "current_price": 3.9549999237060547,
+        "current_value": 67.31010761347422,
+        "pnl": -1.6168086777169748,
+        "pnl_percent": -2.3456854951794726
+      },
+      {
+        "symbol": "HOOD",
+        "shares": 0.5979346378556959,
+        "entry_price": 115.2750015258789,
+        "entry_date": "2026-07-07",
+        "entry_reason": "BUY (Score: 71.8) - Strong uptrend (strength: 100)",
+        "current_price": 110.6365966796875,
+        "current_value": 66.15345336925563,
+        "pnl": -2.773462921935561,
+        "pnl_percent": -4.023773398216002
+      },
+      {
+        "symbol": "PLTR",
+        "shares": 0.502767538403744,
+        "entry_price": 137.09500122070312,
+        "entry_date": "2026-07-07",
+        "entry_reason": "BUY (Score: 67.2) - Strong weekly momentum +18.5%",
+        "current_price": 129.1790008544922,
+        "current_value": 64.94700827306818,
+        "pnl": -3.9799080181230124,
+        "pnl_percent": -5.774098468745281
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "HOOD",
+      "signal": "BUY",
+      "score": 68.7,
+      "technical_score": 75.9,
+      "momentum_score": 70.0,
+      "price": 110.64,
+      "target_upside": 20.5,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 80)",
+        "Strong weekly momentum +10.3%",
+        "Strong monthly gain +34.2%"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "SANA",
+      "signal": "BUY",
+      "score": 68.2,
+      "technical_score": 75.0,
+      "momentum_score": 70.0,
+      "price": 3.95,
+      "target_upside": 28.5,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Golden cross (MA bullish)",
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +13.3%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "RIVN",
+      "signal": "BUY",
+      "score": 62.5,
+      "technical_score": 70.0,
+      "momentum_score": 60.0,
+      "price": 16.41,
+      "target_upside": 10,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "High volume (1.8x avg)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "MRNA",
+      "signal": "BUY",
+      "score": 60.9,
+      "technical_score": 66.4,
+      "momentum_score": 60.0,
+      "price": 74.59,
+      "target_upside": 34.4,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "Strong uptrend (strength: 82)",
+        "Strong monthly gain +57.3%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    }
+  ],
+  "trades_today": [],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 4460,
+    "win_rate": 0.45854241338112306,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.4189189189189189,
+      "buy_win_rate": 0.36522539098436063,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
