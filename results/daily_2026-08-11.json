@@ -1,0 +1,311 @@
+{
+  "date": "2026-08-11",
+  "timestamp": "2026-08-11T15:29:14.516526",
+  "portfolio": {
+    "date": "2026-08-11",
+    "total_value": 903.43,
+    "cash": 61.81,
+    "positions_value": 841.62,
+    "daily_change": 0.0,
+    "daily_change_pct": 0.0,
+    "total_return": -96.57,
+    "total_return_pct": -9.66,
+    "vs_spy": -21.34,
+    "positions": [
+      {
+        "symbol": "GME",
+        "shares": 8.375209674571009,
+        "entry_price": 23.8799991607666,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 67.8) - Golden cross (MA bullish)",
+        "current_price": 18.735000610351562,
+        "current_value": 156.90955836491017,
+        "pnl": -43.09044163508983,
+        "pnl_percent": -21.54522081754492
+      },
+      {
+        "symbol": "EXAS",
+        "shares": 1.9542701500561954,
+        "entry_price": 102.33999633789062,
+        "entry_date": "2026-01-31",
+        "entry_reason": "BUY (Score: 60.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 0.0,
+        "current_value": 0.0,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "LI",
+        "shares": 4.519013084485476,
+        "entry_price": 18.125,
+        "entry_date": "2026-03-25",
+        "entry_reason": "BUY (Score: 74.1) - MACD bullish crossover",
+        "current_price": 12.649999618530273,
+        "current_value": 57.165513794874585,
+        "pnl": -24.741598361424664,
+        "pnl_percent": -30.206898656384695
+      },
+      {
+        "symbol": "RIOT",
+        "shares": 3.2106605147051672,
+        "entry_price": 27.959999084472656,
+        "entry_date": "2026-06-03",
+        "entry_reason": "BUY (Score: 70.2) - Strong uptrend (strength: 77)",
+        "current_price": 20.149999618530273,
+        "current_value": 64.69480814653933,
+        "pnl": -25.075256905169653,
+        "pnl_percent": -27.932760091825603
+      },
+      {
+        "symbol": "SOFI",
+        "shares": 4.191522718254936,
+        "entry_price": 17.65019989013672,
+        "entry_date": "2026-06-24",
+        "entry_reason": "STRONG BUY (Score: 75.8) - Golden cross (MA bullish)",
+        "current_price": 18.09000015258789,
+        "current_value": 75.82464661280741,
+        "pnl": 1.8434327915585698,
+        "pnl_percent": 2.491757969817332
+      },
+      {
+        "symbol": "MRNA",
+        "shares": 0.84048787298852,
+        "entry_price": 66.30999755859375,
+        "entry_date": "2026-06-26",
+        "entry_reason": "BUY (Score: 69.5) - Strong uptrend (strength: 100)",
+        "current_price": 59.189998626708984,
+        "current_value": 49.74847604795605,
+        "pnl": -5.98427275794036,
+        "pnl_percent": -10.737444117070428
+      },
+      {
+        "symbol": "SANA",
+        "shares": 17.01899087532748,
+        "entry_price": 4.050000190734863,
+        "entry_date": "2026-07-07",
+        "entry_reason": "STRONG BUY (Score: 77.0) - Golden cross (MA bullish)",
+        "current_price": 3.6500000953674316,
+        "current_value": 62.11931831800275,
+        "pnl": -6.807597973188443,
+        "pnl_percent": -9.876545099491773
+      },
+      {
+        "symbol": "HOOD",
+        "shares": 0.5979346378556959,
+        "entry_price": 115.2750015258789,
+        "entry_date": "2026-07-07",
+        "entry_reason": "BUY (Score: 71.8) - Strong uptrend (strength: 100)",
+        "current_price": 93.91000366210938,
+        "current_value": 56.152044030730444,
+        "pnl": -12.774872260460747,
+        "pnl_percent": -18.53393847839
+      },
+      {
+        "symbol": "CRWD",
+        "shares": 0.2809059950221317,
+        "entry_price": 208.88949584960938,
+        "entry_date": "2026-07-15",
+        "entry_reason": "BUY (Score: 64.9) - Strong uptrend (strength: 88)",
+        "current_price": 222.42999267578125,
+        "current_value": 62.4819184153558,
+        "pnl": 3.803606734049829,
+        "pnl_percent": 6.4821339010365575
+      },
+      {
+        "symbol": "RIVN",
+        "shares": 3.252677866041599,
+        "entry_price": 18.040000915527344,
+        "entry_date": "2026-07-15",
+        "entry_reason": "BUY (Score: 61.5)",
+        "current_price": 16.270000457763672,
+        "current_value": 52.92107036945458,
+        "pnl": -5.757241311851395,
+        "pnl_percent": -9.811531973039989
+      },
+      {
+        "symbol": "XPEV",
+        "shares": 4.1641517558229575,
+        "entry_price": 14.091300010681152,
+        "entry_date": "2026-07-15",
+        "entry_reason": "BUY (Score: 61.0)",
+        "current_price": 11.8100004196167,
+        "current_value": 49.17863398361674,
+        "pnl": -9.499677697689236,
+        "pnl_percent": -16.189418927531428
+      },
+      {
+        "symbol": "PLTR",
+        "shares": 0.29429095375251135,
+        "entry_price": 174.91510009765625,
+        "entry_date": "2026-08-11",
+        "entry_reason": "BUY (Score: 65.5) - Strong uptrend (strength: 100)",
+        "current_price": 174.91000366210938,
+        "current_value": 51.47443179857742,
+        "pnl": -0.0014998348778263448,
+        "pnl_percent": -0.0029136624248193854
+      },
+      {
+        "symbol": "PLUG",
+        "shares": 23.776412258869932,
+        "entry_price": 2.1649999618530273,
+        "entry_date": "2026-08-11",
+        "entry_reason": "BUY (Score: 64.8) - Bollinger squeeze - breakout imminent",
+        "current_price": 2.1649999618530273,
+        "current_value": 51.475931633455254,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      },
+      {
+        "symbol": "ENPH",
+        "shares": 1.2329564463103055,
+        "entry_price": 41.75,
+        "entry_date": "2026-08-11",
+        "entry_reason": "BUY (Score: 62.5) - Bollinger squeeze - breakout imminent",
+        "current_price": 41.75,
+        "current_value": 51.475931633455254,
+        "pnl": 0.0,
+        "pnl_percent": 0.0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "symbol": "BMRN",
+      "signal": "BUY",
+      "score": 67.8,
+      "technical_score": 70.0,
+      "momentum_score": 75.0,
+      "price": 69.79,
+      "target_upside": 12.0,
+      "stop_loss": 7.0,
+      "risk_level": "LOW",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong weekly momentum +14.9%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "RIOT",
+      "signal": "BUY",
+      "score": 66.0,
+      "technical_score": 70.0,
+      "momentum_score": 70.0,
+      "price": 20.14,
+      "target_upside": 7.0,
+      "stop_loss": 15.0,
+      "risk_level": "HIGH",
+      "bullish_factors": [
+        "High volume (2.1x avg)"
+      ],
+      "bearish_factors": [
+        "Downtrend (strength: 0)"
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "signal": "BUY",
+      "score": 65.5,
+      "technical_score": 65.0,
+      "momentum_score": 75.0,
+      "price": 174.86,
+      "target_upside": 20.7,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Strong uptrend (strength: 100)",
+        "Strong monthly gain +34.5%"
+      ],
+      "bearish_factors": [
+        "RSI overbought - potential pullback"
+      ]
+    },
+    {
+      "symbol": "PLUG",
+      "signal": "BUY",
+      "score": 64.8,
+      "technical_score": 75.0,
+      "momentum_score": 60.0,
+      "price": 2.16,
+      "target_upside": 13.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Bollinger squeeze - breakout imminent",
+        "High volume (1.6x avg)"
+      ],
+      "bearish_factors": []
+    },
+    {
+      "symbol": "ENPH",
+      "signal": "BUY",
+      "score": 62.5,
+      "technical_score": 70.0,
+      "momentum_score": 60.0,
+      "price": 41.75,
+      "target_upside": 13.0,
+      "stop_loss": 10.0,
+      "risk_level": "MEDIUM",
+      "bullish_factors": [
+        "Bollinger squeeze - breakout imminent"
+      ],
+      "bearish_factors": []
+    }
+  ],
+  "trades_today": [
+    {
+      "action": "SELL",
+      "symbol": "BMRN",
+      "shares": 0.8856264445170783,
+      "price": 69.79000091552734,
+      "reason": "Hit target: +13.0%"
+    },
+    {
+      "action": "BUY",
+      "symbol": "PLTR",
+      "shares": 0.29429095375251135,
+      "price": 174.91510009765625,
+      "reason": "BUY (Score: 65.5) - Strong uptrend (strength: 100)"
+    },
+    {
+      "action": "BUY",
+      "symbol": "PLUG",
+      "shares": 23.776412258869932,
+      "price": 2.1649999618530273,
+      "reason": "BUY (Score: 64.8) - Bollinger squeeze - breakout imminent"
+    },
+    {
+      "action": "BUY",
+      "symbol": "ENPH",
+      "shares": 1.2329564463103055,
+      "price": 41.75,
+      "reason": "BUY (Score: 62.5) - Bollinger squeeze - breakout imminent"
+    }
+  ],
+  "new_discoveries": 0,
+  "learning": {
+    "predictions_evaluated": 37,
+    "total_predictions": 5310,
+    "win_rate": 0.45194754355059696,
+    "signal_performance": {
+      "strong_buy_win_rate": 0.4008097165991903,
+      "buy_win_rate": 0.3401574803149606,
+      "avg_return_buy": 0.0
+    },
+    "indicator_accuracy": {
+      "rsi": NaN,
+      "macd": 0.0,
+      "trend": 0.0,
+      "sentiment": NaN
+    },
+    "suggested_weights": {
+      "technical": NaN,
+      "momentum": NaN,
+      "sentiment": NaN,
+      "tech_accuracy": NaN,
+      "sentiment_accuracy": NaN
+    }
+  }
+}
