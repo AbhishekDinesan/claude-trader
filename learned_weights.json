@@ -7,10 +7,10 @@
     "sentiment_accuracy": NaN
   },
   "metrics": {
-    "win_rate_buy": 0.33071988595866003,
-    "win_rate_strong_buy": 0.3840304182509506,
+    "win_rate_buy": 0.33121019108280253,
+    "win_rate_strong_buy": 0.38636363636363635,
     "avg_return_buy": 0.0,
-    "evaluated_predictions": 5656
+    "evaluated_predictions": 5700
   },
-  "last_updated": "2026-09-03T17:58:14.569189"
+  "last_updated": "2026-09-04T17:43:15.958084"
 }
